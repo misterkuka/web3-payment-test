@@ -54,9 +54,11 @@ export default function App() {
     {toastMessage && <div className="fixed top-4 right-4 bg-white text-slate-900 p-6 z-50">
       <div className="pl-4 text-sm font-normal">{toastMessage}</div>
     </div>}
-    <div className="flex flex-col justify-center items-center h-screen overflow-auto bg-slate-100" >
-      {/* TITLE */}
-      <Card title="Crypto Payment Form">
+    <div className="flex flex-col justify-center items-center h-screen overflow-auto bg-slate-100 gap-6" >
+      <Card className="w-[400px]">
+        This simple app accepts crypto payments and send a confirmation message to a webhook
+      </Card>
+      <Card title="Crypto Payment Form" className="w-[400px]">
         <b>Crypto Payment Form</b>
         <span className="text-slate-500">How much would you like to pay?</span>
         <TextInput className="mt-4" placeholder="0.00" onChange={e => setValue(parseFloat(e.target.value || "0"))} />
