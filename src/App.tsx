@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ethers } from "ethers";
-import { Button, Card, Spinner, TextInput, Toast } from "flowbite-react";
+import { Button, Card, Spinner, TextInput } from "flowbite-react";
 import { useEffect, useState } from "react";
 
 export default function App() {
